@@ -60,14 +60,13 @@ h1 {
 }
 
 .result-row {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Adjusted for 5 columns */
     padding: 8px;
     border-bottom: 1px solid #ccc;
 }
 
 .result-row div {
-    width: 30%;
     padding: 5px;
 }
 

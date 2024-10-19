@@ -99,32 +99,35 @@ function populateGrid(records) {
 
 // Function to setup search functionality
 function setupSearch(records) {
-  const searchInput = document.getElementById('searchInput');
-  const filteredResults = document.getElementById('filteredResults');
+    const searchInput = document.getElementById('searchInput');
+    const filteredResults = document.getElementById('filteredResults');
 
-  console.log('setupSearch() triggered'); // Debugging line
+    console.log('setupSearch() triggered'); // Debugging line
 
-  const searchTerm = searchInput.value.toLowerCase();
-  console.log('Search initiated with term:', searchTerm); // Debugging line
-  filteredResults.innerHTML = '';  // Clear previous results
+    const searchTerm = searchInput.value.toLowerCase();
+    console.log('Search initiated with term:', searchTerm); // Debugging line
+    filteredResults.innerHTML = '';  // Clear previous results
 
-  for (const key in records) {
-      const record = records[key];
-      const recordText = `${record.date} ${record.observation_type} ${record.comments}`.toLowerCase();
+    for (const key in records) {
+        const record = records[key];
+        const recordText = `${key} ${record.date} ${record.observation_type} ${record.comments}`.toLowerCase();
 
-      if (recordText.includes(searchTerm)) {
-          const resultRow = document.createElement('div');
-          resultRow.className = 'result-row';
+        // Check if the search term is present in any of the fields, including the primary key
+        if (recordText.includes(searchTerm)) {
+            const resultRow = document.createElement('div');
+            resultRow.className = 'result-row';
 
-          resultRow.innerHTML = `
-              <div>${record.date}</div>
-              <div>${record.observation_type}</div>
-              <div>${record.comments}</div>
-          `;
+            resultRow.innerHTML = `
+                <div>${key}</div>
+                <div>${record.date}</div>
+                <div>${record.observation_type}</div>
+                <div>${record.comments}</div>
+                <div>${record.severity_score}</div>
+            `;
 
-          filteredResults.appendChild(resultRow);
-      }
-  }
+            filteredResults.appendChild(resultRow);
+        }
+    }
 }
 
 // Function to create the pie chart
