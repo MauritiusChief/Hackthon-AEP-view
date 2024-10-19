@@ -49,6 +49,17 @@ function populateGrid(records) {
         const severityScore = record.severity_score;
         const card = document.createElement('div');
         card.className = 'emrg-card';
+
+        // Assign grid-area to each card
+        if (i === 0) {
+            card.style.gridArea = 'most-emrg';
+        } else if (i === 1) {
+            card.style.gridArea = 'second-emrg';
+        } else if (i === 2) {
+            card.style.gridArea = 'third-emrg';
+        } else if (i === 3) {
+            card.style.gridArea = 'forth-emrg';
+        }
         
         // Assign color based on severity score
         let bgColor = '';

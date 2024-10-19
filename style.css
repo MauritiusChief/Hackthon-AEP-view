@@ -73,6 +73,7 @@ h1 {
 
 #chart-container {
     grid-area: chart;
+    width: 70%;
 }
 
 #search-container {
