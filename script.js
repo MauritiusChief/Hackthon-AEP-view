@@ -47,9 +47,10 @@ function populateGrid(records) {
     for (let i = 0; i < Math.min(4, recordArray.length); i++) {
         const record = recordArray[i];
         const severityScore = record.severity_score;
+        const primaryKey = Object.keys(records)[i]; // Get the primary key
         const card = document.createElement('div');
         card.className = 'emrg-card';
-
+    
         // Assign grid-area to each card
         if (i === 0) {
             card.style.gridArea = 'most-emrg';
@@ -60,7 +61,7 @@ function populateGrid(records) {
         } else if (i === 3) {
             card.style.gridArea = 'forth-emrg';
         }
-        
+    
         // Assign color based on severity score
         let bgColor = '';
         if (severityScore >= 1 && severityScore <= 5) {
@@ -71,11 +72,12 @@ function populateGrid(records) {
             bgColor = '#F44336'; // Red
         }
         card.style.backgroundColor = bgColor;
-
+    
         // Add content to the card
         if (i === 0) {  // 'most-emrg' card shows all info
             card.innerHTML = `
                 <h3>Most Urgent</h3>
+                <p>Primary Key: ${primaryKey}</p>
                 <p>Date: ${record.date}</p>
                 <p>Type: ${record.observation_type}</p>
                 <p>Comments: ${record.comments}</p>
@@ -84,11 +86,12 @@ function populateGrid(records) {
         } else {  // 'second-emrg', 'third-emrg', 'forth-emrg' show limited info
             card.innerHTML = `
                 <h3>${i === 1 ? 'Second' : i === 2 ? 'Third' : 'Forth'} Urgent</h3>
+                <p>Primary Key: ${primaryKey}</p>
                 <p>Type: ${record.observation_type}</p>
                 <p>Severity: ${severityScore}</p>
             `;
         }
-
+    
         // Add the card to the grid container
         gridContainer.appendChild(card);
     }
