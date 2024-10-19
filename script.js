@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
           console.log('Data loaded successfully');
           populateTable(data.records);
 
+          // Create the pie chart
+          createPieChart(data.records);
+
           // Attach click event to the search button
           const searchButton = document.getElementById('searchButton');
           searchButton.addEventListener('click', () => {
@@ -38,8 +41,6 @@ function populateTable(records) {
           <td>${record.observation_type}</td>
           <td>${record.comments}</td>
           <td>${record.hazard_value.severity_score}</td>
-          <td>${record.hazard_value.impact}</td>
-          <td>${record.hazard_value.suggested_action}</td>
       `;
 
       tableBody.appendChild(row);
@@ -74,4 +75,46 @@ function setupSearch(records) {
           filteredResults.appendChild(resultRow);
       }
   }
+}
+
+// Function to create the pie chart
+function createPieChart(records) {
+  const severityCounts = [0, 0, 0]; // 1-5, 6-8, 9-10
+
+  // Count records in each severity range
+  for (const key in records) {
+      const score = records[key].hazard_value.severity_score;
+
+      if (score >= 1 && score <= 5) {
+          severityCounts[0]++;
+      } else if (score >= 6 && score <= 8) {
+          severityCounts[1]++;
+      } else if (score >= 9 && score <= 10) {
+          severityCounts[2]++;
+      }
+  }
+
+  const ctx = document.getElementById('severityChart').getContext('2d');
+  new Chart(ctx, {
+      type: 'pie',
+      data: {
+          labels: ['1-5', '6-8', '9-10'],
+          datasets: [{
+              data: severityCounts,
+              backgroundColor: ['#4CAF50', '#FFC107', '#F44336'], // Green, Yellow, Red
+          }]
+      },
+      options: {
+          responsive: true,
+          plugins: {
+              legend: {
+                  position: 'top',
+              },
+              title: {
+                  display: true,
+                  text: 'Severity Score Distribution'
+              }
+          }
+      }
+  });
 }

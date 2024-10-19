@@ -61,3 +61,34 @@ tr:nth-child(even) {
     width: 30%;
     padding: 5px;
 }
+
+#observationTable { grid-area: card; }
+#chart-container {
+    grid-area: chart;
+}
+
+#search-container {
+    grid-area: search;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    display: grid;
+    grid-template-areas:
+    'card chart'
+    'search search';
+    gap: 20px;
+    padding: 10px;
+}
+
+/* #chart-container {
+    width: 40%;
+    padding: 20px;
+} */
+
+canvas {
+    max-width: 100%;
+}
