@@ -6,7 +6,6 @@
       "comments": "Potential fire hazard near storage area.",
       "hazard_value": {
         "severity_score": 8,
-        "likelihood_score": 5,
         "impact": "Property Damage",
         "suggested_action": "Remove flammable materials"
       }
@@ -17,11 +16,9 @@
       "comments": "Leaking chemical containers in lab.",
       "hazard_value": {
         "severity_score": 9,
-        "likelihood_score": 7,
         "impact": "Environmental Damage",
         "suggested_action": "Seal containers and clean up area"
       }
-    },
-    // More entries...
+    }
   }
 }
