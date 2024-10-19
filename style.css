@@ -29,3 +29,35 @@ th {
 tr:nth-child(even) {
     background-color: #eaeaea;
 }
+
+.search-container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#searchInput {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#filteredResults {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.result-row {
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+.result-row div {
+    width: 30%;
+    padding: 5px;
+}

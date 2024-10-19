@@ -19,6 +19,86 @@
         "impact": "Environmental Damage",
         "suggested_action": "Seal containers and clean up area"
       }
+    },
+    "primary_key_3": {
+      "date": "2024-10-17",
+      "observation_type": "Electrical Safety",
+      "comments": "Exposed wiring in hallway.",
+      "hazard_value": {
+        "severity_score": 7,
+        "impact": "Personal Injury",
+        "suggested_action": "Insulate exposed wires"
+      }
+    },
+    "primary_key_4": {
+      "date": "2024-10-18",
+      "observation_type": "Ergonomic Safety",
+      "comments": "Incorrect posture observed at workstation.",
+      "hazard_value": {
+        "severity_score": 5,
+        "impact": "Personal Injury",
+        "suggested_action": "Provide ergonomic chairs"
+      }
+    },
+    "primary_key_5": {
+      "date": "2024-10-19",
+      "observation_type": "Slip and Fall",
+      "comments": "Wet floor near entrance.",
+      "hazard_value": {
+        "severity_score": 6,
+        "impact": "Personal Injury",
+        "suggested_action": "Place warning signs and dry floor"
+      }
+    },
+    "primary_key_6": {
+      "date": "2024-10-20",
+      "observation_type": "Machine Safety",
+      "comments": "Guard missing on cutting machine.",
+      "hazard_value": {
+        "severity_score": 10,
+        "impact": "Severe Personal Injury",
+        "suggested_action": "Install safety guard immediately"
+      }
+    },
+    "primary_key_7": {
+      "date": "2024-10-21",
+      "observation_type": "Noise Safety",
+      "comments": "Excessive noise levels in workshop.",
+      "hazard_value": {
+        "severity_score": 4,
+        "impact": "Hearing Loss",
+        "suggested_action": "Provide ear protection"
+      }
+    },
+    "primary_key_8": {
+      "date": "2024-10-22",
+      "observation_type": "Workplace Violence",
+      "comments": "Aggressive behavior observed in meeting.",
+      "hazard_value": {
+        "severity_score": 7,
+        "impact": "Personal Harm",
+        "suggested_action": "Counsel employees involved"
+      }
+    },
+    "primary_key_9": {
+      "date": "2024-10-23",
+      "observation_type": "Emergency Preparedness",
+      "comments": "Blocked emergency exit.",
+      "hazard_value": {
+        "severity_score": 9,
+        "impact": "Life Threatening",
+        "suggested_action": "Clear exit and conduct drills"
+      }
+    },
+    "primary_key_10": {
+      "date": "2024-10-24",
+      "observation_type": "Traffic Safety",
+      "comments": "Speeding vehicles in parking lot.",
+      "hazard_value": {
+        "severity_score": 6,
+        "impact": "Personal Injury",
+        "suggested_action": "Install speed bumps"
+      }
     }
   }
 }

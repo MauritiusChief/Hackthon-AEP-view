@@ -1,4 +1,6 @@
+console.log('Starting DOMContentLoaded');
 document.addEventListener('DOMContentLoaded', () => {
+  console.log('DOM fully loaded');
   fetch('test_input.json')
       .then(response => {
           if (!response.ok) {
@@ -7,7 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
           return response.json();
       })
       .then(data => {
+          console.log('Data loaded successfully');
           populateTable(data.records);
+          // Attach click event to the search button
+          const searchButton = document.getElementById('searchButton');
+          searchButton.addEventListener('click', () => {
+              setupSearch(data.records); // Call setupSearch on each button click
+          });
       })
       .catch(error => {
           console.error('Error:', error);
@@ -35,4 +43,37 @@ function populateTable(records) {
 
       tableBody.appendChild(row);
   }
+}
+
+// Function to setup search functionality
+function setupSearch(records) {
+  const searchInput = document.getElementById('searchInput');
+  const searchButton = document.getElementById('searchButton');
+  const filteredResults = document.getElementById('filteredResults');
+
+  console.log('setupSearch() triggered');
+
+  searchButton.addEventListener('click', () => {
+      const searchTerm = searchInput.value.toLowerCase();
+      console.log('Input event triggered: '+searchTerm);
+      filteredResults.innerHTML = '';  // Clear previous results
+
+      for (const key in records) {
+          const record = records[key];
+          const recordText = `${record.date} ${record.observation_type} ${record.comments}`.toLowerCase();
+
+          if (recordText.includes(searchTerm)) {
+              const resultRow = document.createElement('div');
+              resultRow.className = 'result-row';
+
+              resultRow.innerHTML = `
+                  <div>${record.date}</div>
+                  <div>${record.observation_type}</div>
+                  <div>${record.comments}</div>
+              `;
+
+              filteredResults.appendChild(resultRow);
+          }
+      }
+  });
 }
