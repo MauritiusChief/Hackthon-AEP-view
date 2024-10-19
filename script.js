@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
       })
       .then(data => {
           console.log('Data loaded successfully');
-          populateTable(data.records);
+          populateGrid(data.records);
 
           // Create the pie chart
           createPieChart(data.records);
@@ -27,24 +27,60 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 });
 
-// Function to populate the table with data
-function populateTable(records) {
-  const tableBody = document.getElementById('tableBody');
-  tableBody.innerHTML = '';  // Clear existing rows
+function populateGrid(records) {
+    const gridContainer = document.getElementById('gridContainer');
+    gridContainer.innerHTML = '';  // Clear existing content
 
-  for (const key in records) {
-      const record = records[key];
-      const row = document.createElement('tr');
+    // Convert the records object to an array
+    const recordArray = Object.values(records);
 
-      row.innerHTML = `
-          <td>${record.date}</td>
-          <td>${record.observation_type}</td>
-          <td>${record.comments}</td>
-          <td>${record.hazard_value.severity_score}</td>
-      `;
+    // Sort the array by severity_score (descending) and date (ascending)
+    recordArray.sort((a, b) => {
+        if (b.severity_score !== a.severity_score) {
+            return b.severity_score - a.severity_score;
+        } else {
+            return new Date(a.date) - new Date(b.date);
+        }
+    });
 
-      tableBody.appendChild(row);
-  }
+    // Create grid items
+    for (let i = 0; i < Math.min(4, recordArray.length); i++) {
+        const record = recordArray[i];
+        const severityScore = record.severity_score;
+        const card = document.createElement('div');
+        card.className = 'emrg-card';
+        
+        // Assign color based on severity score
+        let bgColor = '';
+        if (severityScore >= 1 && severityScore <= 5) {
+            bgColor = '#4CAF50'; // Green
+        } else if (severityScore >= 6 && severityScore <= 8) {
+            bgColor = '#FFC107'; // Yellow
+        } else if (severityScore >= 9 && severityScore <= 10) {
+            bgColor = '#F44336'; // Red
+        }
+        card.style.backgroundColor = bgColor;
+
+        // Add content to the card
+        if (i === 0) {  // 'most-emrg' card shows all info
+            card.innerHTML = `
+                <h3>Most Urgent</h3>
+                <p>Date: ${record.date}</p>
+                <p>Type: ${record.observation_type}</p>
+                <p>Comments: ${record.comments}</p>
+                <p>Severity: ${severityScore}</p>
+            `;
+        } else {  // 'second-emrg', 'third-emrg', 'forth-emrg' show limited info
+            card.innerHTML = `
+                <h3>${i === 1 ? 'Second' : i === 2 ? 'Third' : 'Forth'} Urgent</h3>
+                <p>Type: ${record.observation_type}</p>
+                <p>Severity: ${severityScore}</p>
+            `;
+        }
+
+        // Add the card to the grid container
+        gridContainer.appendChild(card);
+    }
 }
 
 // Function to setup search functionality
@@ -83,7 +119,7 @@ function createPieChart(records) {
 
   // Count records in each severity range
   for (const key in records) {
-      const score = records[key].hazard_value.severity_score;
+      const score = records[key].severity_score;
 
       if (score >= 1 && score <= 5) {
           severityCounts[0]++;
