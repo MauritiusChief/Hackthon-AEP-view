@@ -59,6 +59,246 @@
       "observation_type": "Traffic Safety",
       "comments": "Speeding vehicles in parking lot.",
       "severity_score": 6
+    },
+    "primary_key_11": {
+      "date": "2024-10-25",
+      "observation_type": "Fire Safety",
+      "comments": "Overloaded electrical socket.",
+      "severity_score": 8
+    },
+    "primary_key_12": {
+      "date": "2024-10-26",
+      "observation_type": "Chemical Safety",
+      "comments": "Unlabeled chemical bottles in storage.",
+      "severity_score": 7
+    },
+    "primary_key_13": {
+      "date": "2024-10-27",
+      "observation_type": "Electrical Safety",
+      "comments": "Damaged extension cord found.",
+      "severity_score": 6
+    },
+    "primary_key_14": {
+      "date": "2024-10-28",
+      "observation_type": "Ergonomic Safety",
+      "comments": "Monitor height not adjustable.",
+      "severity_score": 5
+    },
+    "primary_key_15": {
+      "date": "2024-10-29",
+      "observation_type": "Slip and Fall",
+      "comments": "Slippery staircase.",
+      "severity_score": 8
+    },
+    "primary_key_16": {
+      "date": "2024-10-30",
+      "observation_type": "Machine Safety",
+      "comments": "Broken safety switch on conveyor belt.",
+      "severity_score": 9
+    },
+    "primary_key_17": {
+      "date": "2024-10-31",
+      "observation_type": "Noise Safety",
+      "comments": "Noisy ventilation system.",
+      "severity_score": 4
+    },
+    "primary_key_18": {
+      "date": "2024-11-01",
+      "observation_type": "Workplace Violence",
+      "comments": "Verbal confrontation between employees.",
+      "severity_score": 6
+    },
+    "primary_key_19": {
+      "date": "2024-11-02",
+      "observation_type": "Emergency Preparedness",
+      "comments": "Fire drill not conducted in last 6 months.",
+      "severity_score": 5
+    },
+    "primary_key_20": {
+      "date": "2024-11-03",
+      "observation_type": "Traffic Safety",
+      "comments": "Vehicles parked in no-parking zone.",
+      "severity_score": 7
+    },
+    "primary_key_21": {
+      "date": "2024-11-04",
+      "observation_type": "Fire Safety",
+      "comments": "Blocked fire extinguisher.",
+      "severity_score": 8
+    },
+    "primary_key_22": {
+      "date": "2024-11-05",
+      "observation_type": "Chemical Safety",
+      "comments": "Chemical spill in storeroom.",
+      "severity_score": 9
+    },
+    "primary_key_23": {
+      "date": "2024-11-06",
+      "observation_type": "Electrical Safety",
+      "comments": "Flickering lights in office.",
+      "severity_score": 4
+    },
+    "primary_key_24": {
+      "date": "2024-11-07",
+      "observation_type": "Ergonomic Safety",
+      "comments": "Non-adjustable workstations.",
+      "severity_score": 5
+    },
+    "primary_key_25": {
+      "date": "2024-11-08",
+      "observation_type": "Slip and Fall",
+      "comments": "Oil spill on factory floor.",
+      "severity_score": 8
+    },
+    "primary_key_26": {
+      "date": "2024-11-09",
+      "observation_type": "Machine Safety",
+      "comments": "Machine running without operator nearby.",
+      "severity_score": 9
+    },
+    "primary_key_27": {
+      "date": "2024-11-10",
+      "observation_type": "Noise Safety",
+      "comments": "High noise level in production area.",
+      "severity_score": 6
+    },
+    "primary_key_28": {
+      "date": "2024-11-11",
+      "observation_type": "Workplace Violence",
+      "comments": "Hostile customer interaction.",
+      "severity_score": 5
+    },
+    "primary_key_29": {
+      "date": "2024-11-12",
+      "observation_type": "Emergency Preparedness",
+      "comments": "No emergency response plan displayed.",
+      "severity_score": 7
+    },
+    "primary_key_30": {
+      "date": "2024-11-13",
+      "observation_type": "Traffic Safety",
+      "comments": "Pedestrians crossing without signal.",
+      "severity_score": 6
+    },
+    "primary_key_31": {
+      "date": "2024-11-14",
+      "observation_type": "Fire Safety",
+      "comments": "Flammable materials stored improperly.",
+      "severity_score": 8
+    },
+    "primary_key_32": {
+      "date": "2024-11-15",
+      "observation_type": "Chemical Safety",
+      "comments": "Corroded chemical storage tanks.",
+      "severity_score": 10
+    },
+    "primary_key_33": {
+      "date": "2024-11-16",
+      "observation_type": "Electrical Safety",
+      "comments": "Circuit breaker malfunction.",
+      "severity_score": 7
+    },
+    "primary_key_34": {
+      "date": "2024-11-17",
+      "observation_type": "Ergonomic Safety",
+      "comments": "Repetitive strain injury reported.",
+      "severity_score": 6
+    },
+    "primary_key_35": {
+      "date": "2024-11-18",
+      "observation_type": "Slip and Fall",
+      "comments": "Uneven sidewalk outside building.",
+      "severity_score": 5
+    },
+    "primary_key_36": {
+      "date": "2024-11-19",
+      "observation_type": "Machine Safety",
+      "comments": "Machine overheating during operation.",
+      "severity_score": 9
+    },
+    "primary_key_37": {
+      "date": "2024-11-20",
+      "observation_type": "Noise Safety",
+      "comments": "Loud machinery without sound barriers.",
+      "severity_score": 7
+    },
+    "primary_key_38": {
+      "date": "2024-11-21",
+      "observation_type": "Workplace Violence",
+      "comments": "Employee reported feeling threatened.",
+      "severity_score": 8
+    },
+    "primary_key_39": {
+      "date": "2024-11-22",
+      "observation_type": "Emergency Preparedness",
+      "comments": "No clear evacuation route.",
+      "severity_score": 7
+    },
+    "primary_key_40": {
+      "date": "2024-11-23",
+      "observation_type": "Traffic Safety",
+      "comments": "Improper use of pedestrian crossing.",
+      "severity_score": 5
+    },
+    "primary_key_41": {
+      "date": "2024-11-24",
+      "observation_type": "Fire Safety",
+      "comments": "Improper disposal of smoking materials.",
+      "severity_score": 6
+    },
+    "primary_key_42": {
+      "date": "2024-11-25",
+      "observation_type": "Chemical Safety",
+      "comments": "Unsafe mixing of cleaning agents.",
+      "severity_score": 9
+    },
+    "primary_key_43": {
+      "date": "2024-11-26",
+      "observation_type": "Electrical Safety",
+      "comments": "Loose electrical sockets.",
+      "severity_score": 4
+    },
+    "primary_key_44": {
+      "date": "2024-11-27",
+      "observation_type": "Ergonomic Safety",
+      "comments": "Awkward lifting technique observed.",
+      "severity_score": 6
+    },
+    "primary_key_45": {
+      "date": "2024-11-28",
+      "observation_type": "Slip and Fall",
+      "comments": "Ice accumulation at entrance.",
+      "severity_score": 8
+    },
+    "primary_key_46": {
+      "date": "2024-11-29",
+      "observation_type": "Machine Safety",
+      "comments": "Unguarded moving parts.",
+      "severity_score": 10
+    },
+    "primary_key_47": {
+      "date": "2024-11-30",
+      "observation_type": "Noise Safety",
+      "comments": "No ear protection provided.",
+      "severity_score": 5
+    },
+    "primary_key_48": {
+      "date": "2024-12-01",
+      "observation_type": "Workplace Violence",
+      "comments": "Bullying behavior observed.",
+      "severity_score": 7
+    },
+    "primary_key_49": {
+      "date": "2024-12-02",
+      "observation_type": "Emergency Preparedness",
+      "comments": "First aid kit not accessible.",
+      "severity_score": 6
+    },
+    "primary_key_50": {
+      "date": "2024-12-03",
+      "observation_type": "Traffic Safety",
+      "comments": "Speeding reported near pedestrian zone.",
+      "severity_score": 7
     }
   }
 }
