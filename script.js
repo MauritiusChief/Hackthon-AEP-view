@@ -62,6 +62,17 @@ function populateGrid(records) {
     
         // Assign grid-area to each card
         card.style.gridArea = gridAreas[i];
+
+        // Assign color based on severity score
+        let bgColor = '';
+        if (severityScore >= 1 && severityScore <= 50) {
+            bgColor = '#4CAF50'; // Green
+        } else if (severityScore >= 51 && severityScore <= 80) {
+            bgColor = '#FFC107'; // Yellow
+        } else if (severityScore >= 81 && severityScore <= 100) {
+            bgColor = '#F44336'; // Red
+        }
+        card.style.backgroundColor = bgColor;
     
         // Add content to the card
         if (i < 2) {
@@ -71,14 +82,14 @@ function populateGrid(records) {
                 <p>Date: ${record.date}</p>
                 <p>Type: ${record.observation_type}</p>
                 <p>Comments: ${record.comments}</p>
-                <p class="severity ${getSeverityClass(record.severity_score)}">Severity: ${severityScore}</p>
+                <p>Severity: ${severityScore}</p>
             `;
         } else if (i < 6) {
             card.innerHTML = `
                 <h3> Less Urgent</h3>
                 <p>Primary Key: ${primaryKey}</p>
                 <p>Type: ${record.observation_type}</p>
-                <p class="severity ${getSeverityClass(record.severity_score)}">Severity: ${severityScore}</p>
+                <p>Severity: ${severityScore}</p>
                 <div class="tooltip">
                     <p>Date: ${record.date}</p>
                     <p>Comments: ${record.comments}</p>
@@ -87,7 +98,7 @@ function populateGrid(records) {
         } else {
             card.innerHTML = `
                 <p>Primary Key: ${primaryKey}</p>
-                <p class="severity ${getSeverityClass(record.severity_score)}">Severity: ${severityScore}</p>
+                <p>Severity: ${severityScore}</p>
                 <div class="tooltip">
                     <p>Type: ${record.observation_type}</p>
                     <p>Date: ${record.date}</p>
@@ -99,12 +110,6 @@ function populateGrid(records) {
         // Add the card to the grid container
         gridContainer.appendChild(card);
     }
-}
-
-function getSeverityClass(score) {
-    if (score <= 60) return 'low';
-    if (score <= 80) return 'medium';
-    return 'high';
 }
 
 // Function to setup search functionality
