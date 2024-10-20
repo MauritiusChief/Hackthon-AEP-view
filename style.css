@@ -63,12 +63,6 @@ h1 {
     display: block;
 }
 
-.search-container {
-    width: 80%;
-    margin: 20px auto;
-    text-align: center;
-}
-
 #searchInput {
     width: 60%;
     padding: 10px;
@@ -78,20 +72,57 @@ h1 {
 }
 
 #filteredResults {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     padding: 10px;
 }
 
 .result-row {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Adjusted for 5 columns */
+    grid-template-columns: 1fr 1.5fr 3fr 0.5fr; /* Adjusted for variable column widths */
     padding: 8px;
     border-bottom: 1px solid #ccc;
 }
 
 .result-row div {
     padding: 5px;
+    text-align: center;
+}
+
+.result-row:nth-child(even) {
+    background-color: #f9f9f9; /* Alternating row color for better readability */
+}
+
+.result-row div:nth-child(3) {
+    text-align: left; /* Align comments to the left for better readability */
+}
+
+.result-row div:nth-child(4) {
+    text-align: right; /* Align severity score to the right */
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.pagination button {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.pagination button:hover {
+    background-color: #e1e1e1;
+}
+
+.pagination button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
 }
 
 #chart-container {

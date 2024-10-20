@@ -10,6 +10,20 @@ document.addEventListener('DOMContentLoaded', () => {
       })
       .then(data => {
           console.log('Data loaded successfully');
+          const recordArray = Object.values(data.records);
+            
+            // Sort the array by severity_score (descending) and date (ascending)
+            recordArray.sort((a, b) => {
+                if (b.severity_score !== a.severity_score) {
+                    return b.severity_score - a.severity_score;
+                } else {
+                    return new Date(a.date) - new Date(b.date);
+                }
+            });
+
+            // Initial display of top 10 results
+            displayResults(recordArray, 0);
+
           populateGrid(data.records);
 
           // Create the pie chart
@@ -18,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
           // Attach click event to the search button
           const searchButton = document.getElementById('searchButton');
           searchButton.addEventListener('click', () => {
-              setupSearch(data.records); // Call setupSearch on each button click
+              setupSearch(recordArray); // Call setupSearch on each button click
           });
       })
       .catch(error => {
@@ -104,34 +118,81 @@ function getSeverityClass(score) {
 // Function to setup search functionality
 function setupSearch(records) {
     const searchInput = document.getElementById('searchInput');
-    const filteredResults = document.getElementById('filteredResults');
 
     console.log('setupSearch() triggered'); // Debugging line
 
     const searchTerm = searchInput.value.toLowerCase();
     console.log('Search initiated with term:', searchTerm); // Debugging line
-    filteredResults.innerHTML = '';  // Clear previous results
+    // Filter the records based on the search term
+    const filteredRecords = records.filter(record => {
+        const recordText = `${record.date} ${record.observation_type} ${record.comments}`.toLowerCase();
+        return recordText.includes(searchTerm);
+    });
 
-    for (const key in records) {
-        const record = records[key];
-        const recordText = `${key} ${record.date} ${record.observation_type} ${record.comments}`.toLowerCase();
+    // Display the filtered results (starting from the first page)
+    displayResults(filteredRecords, 0);
+}
 
-        // Check if the search term is present in any of the fields, including the primary key
-        if (recordText.includes(searchTerm)) {
-            const resultRow = document.createElement('div');
-            resultRow.className = 'result-row';
+function displayResults(records, pageIndex) {
+    const filteredResults = document.getElementById('filteredResults');
+    filteredResults.innerHTML = '';
 
-            resultRow.innerHTML = `
-                <div>${key}</div>
-                <div>${record.date}</div>
-                <div>${record.observation_type}</div>
-                <div>${record.comments}</div>
-                <div>${record.severity_score}</div>
-            `;
+    const resultsPerPage = 10;
+    const startIndex = pageIndex * resultsPerPage;
+    const endIndex = startIndex + resultsPerPage;
 
-            filteredResults.appendChild(resultRow);
-        }
+    // Get the current page's records and ensure at least 10 rows are displayed
+    const currentPageRecords = records.slice(startIndex, endIndex);
+    const rowsToDisplay = [...currentPageRecords];
+    while (rowsToDisplay.length < resultsPerPage) {
+        rowsToDisplay.push({ date: '-', observation_type: '-', comments: '-', severity_score: '-' });
     }
+
+    // Render the records
+    rowsToDisplay.forEach(record => {
+        const resultRow = document.createElement('div');
+        resultRow.className = 'result-row';
+        resultRow.innerHTML = `
+            <div>${record.date}</div>
+            <div>${record.observation_type}</div>
+            <div>${record.comments}</div>
+            <div>${record.severity_score}</div>
+        `;
+        filteredResults.appendChild(resultRow);
+    });
+
+    // Create and render pagination controls
+    renderPaginationControls(records, pageIndex, resultsPerPage);
+}
+
+function renderPaginationControls(records, pageIndex, resultsPerPage) {
+    const filteredResults = document.getElementById('filteredResults');
+    const totalPages = Math.ceil(records.length / resultsPerPage);
+
+    const paginationDiv = document.createElement('div');
+    paginationDiv.className = 'pagination';
+
+    // Create Previous button
+    if (pageIndex > 0) {
+        const prevButton = document.createElement('button');
+        prevButton.textContent = 'Previous';
+        prevButton.addEventListener('click', () => {
+            displayResults(records, pageIndex - 1);
+        });
+        paginationDiv.appendChild(prevButton);
+    }
+
+    // Create Next button
+    if (pageIndex < totalPages - 1) {
+        const nextButton = document.createElement('button');
+        nextButton.textContent = 'Next';
+        nextButton.addEventListener('click', () => {
+            displayResults(records, pageIndex + 1);
+        });
+        paginationDiv.appendChild(nextButton);
+    }
+
+    filteredResults.appendChild(paginationDiv);
 }
 
 // Function to create the pie chart
