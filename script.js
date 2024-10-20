@@ -1,7 +1,7 @@
 console.log('Starting DOMContentLoaded');
 document.addEventListener('DOMContentLoaded', () => {
   console.log('DOM fully loaded');
-  fetch('test_input.json')
+  fetch('output_2.json')
       .then(response => {
           if (!response.ok) {
               throw new Error('Failed to load JSON data');
@@ -64,11 +64,11 @@ function populateGrid(records) {
     
         // Assign color based on severity score
         let bgColor = '';
-        if (severityScore >= 1 && severityScore <= 5) {
+        if (severityScore >= 1 && severityScore <= 50) {
             bgColor = '#4CAF50'; // Green
-        } else if (severityScore >= 6 && severityScore <= 8) {
+        } else if (severityScore >= 51 && severityScore <= 80) {
             bgColor = '#FFC107'; // Yellow
-        } else if (severityScore >= 9 && severityScore <= 10) {
+        } else if (severityScore >= 81 && severityScore <= 100) {
             bgColor = '#F44336'; // Red
         }
         card.style.backgroundColor = bgColor;
@@ -132,26 +132,27 @@ function setupSearch(records) {
 
 // Function to create the pie chart
 function createPieChart(records) {
-  const severityCounts = [0, 0, 0]; // 1-5, 6-8, 9-10
+  const severityCounts = [0, 0, 0]; // 1-50, 51-80, 81-100
 
   // Count records in each severity range
   for (const key in records) {
       const score = records[key].severity_score;
 
-      if (score >= 1 && score <= 5) {
+      if (score >= 1 && score <= 50) {
           severityCounts[0]++;
-      } else if (score >= 6 && score <= 8) {
+      } else if (score >= 51 && score <= 80) {
           severityCounts[1]++;
-      } else if (score >= 9 && score <= 10) {
+      } else if (score >= 81 && score <= 100) {
           severityCounts[2]++;
       }
   }
+  console.log("severityCounts:", severityCounts)
 
   const ctx = document.getElementById('severityChart').getContext('2d');
   new Chart(ctx, {
       type: 'pie',
       data: {
-          labels: ['1-5', '6-8', '9-10'],
+          labels: ['1-50', '51-80', '81-100'],
           datasets: [{
               data: severityCounts,
               backgroundColor: ['#4CAF50', '#FFC107', '#F44336'], // Green, Yellow, Red

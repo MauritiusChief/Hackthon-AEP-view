@@ -1,0 +1,604 @@
+{
+    "records": {
+        "330560": {
+            "date": "3/15/2023",
+            "observation_type": "Awareness of environment",
+            "comments": "[NAME] was working a near by cliff that had about a 20' drop off, crew didn't discuss as a hazard on briefing, i discussed with GF and he told the foreman to make the corrections and place something out there to give crews a visual.",
+            "severity_score": 62
+        },
+        "164330": {
+            "date": "7/9/2019",
+            "observation_type": "Other - Vehicle Operating Condition",
+            "comments": "[NAME] trucks with cut out bumbers need a hitch step fabricated to facilitate safe entry and exit from the back",
+            "severity_score": 74
+        },
+        "265239": {
+            "date": "8/1/2022",
+            "observation_type": "Other - Suspended Load/Overhead Work",
+            "comments": "Employee rigged a concrete culvert to be off load from a flat bed trailer. Employee was in line of fire when culvert was being lifted.",
+            "severity_score": 82
+        },
+        "404438": {
+            "date": "10/18/2023",
+            "observation_type": "Other - PPE Workforce",
+            "comments": "[NAME] tender was not wearing his Hardhat. I recommended they discuss PPE use during the after lunch briefing.",
+            "severity_score": 34
+        },
+        "83172": {
+            "date": "3/3/2021",
+            "observation_type": "Was a drop zone established, and clearly marked?",
+            "comments": "A drop zone was not clearly marked by the crew while the climber aloft was bringing the tree down to a spar.",
+            "severity_score": 58
+        },
+        "438962": {
+            "date": "2/22/2024",
+            "observation_type": "Personal voltage detector",
+            "comments": "Discussed the need to utilize PVDs during assessment with unknown conditions and downed lines. AEP Utilities - PVD Policy",
+            "severity_score": 47
+        },
+        "485230": {
+            "date": "8/5/2024",
+            "observation_type": "Hearing protection as required by OSHA and in Owner-designated areas",
+            "comments": "Team was wearing all appropriate PPE for the tasks at hand until the hydrovac team started their work. I noticed that the equipment was rather loud, so I conducted a noise survey and shared the results with the team. I also shared the NIOSH app that I was using with the crew leaders as well. They weren't familiar with it, and they downloaded the application for their use too. Kudos to the team, as they all went and got their hearing protection and thanked me for sharing the results.",
+            "severity_score": 44
+        },
+        "40409": {
+            "date": "6/24/2020",
+            "observation_type": "Other / Job Briefing",
+            "comments": "No [NAME] version available. [NAME] went over briefing with us. Explained the need for and purpose of [NAME] briefing. Need more detail on ATE fire briefing; no assignments, water source, or humidity.",
+            "severity_score": 38
+        },
+        "424794": {
+            "date": "12/28/2023",
+            "observation_type": "Assistance requested",
+            "comments": "After looking at the job LCS requested a Vac truck due to seeing the markings of all underground utilities in the area.",
+            "severity_score": 49
+        },
+        "398234": {
+            "date": "9/27/2023",
+            "observation_type": "Line of fire",
+            "comments": "[NAME] member was standing alongside the road while other crew member was cutting brush around pole. This was a very high traffic area and crew member should have been farther off the road to avoid getting hit.",
+            "severity_score": 37
+        },
+        "193121": {
+            "date": "10/28/2021",
+            "observation_type": "Inspection of body harness",
+            "comments": "Asked crew last time they inspected their harness, was unable to remember. Had linemen inspect their harnesses before going up in bucket",
+            "severity_score": 47
+        },
+        "293699": {
+            "date": "10/14/2022",
+            "observation_type": "Wheel chocks used",
+            "comments": "Wheel chocks were only placed on one side, and they were placed on the uphill side. ( Slight Slope )",
+            "severity_score": 40
+        },
+        "213377": {
+            "date": "2/17/2022",
+            "observation_type": "Appropriate signs out",
+            "comments": "The [NAME] was provided some coaching for not having signs on the cross street, as the [NAME] working close to an intersection, and there was no warning for cars turning onto the street with the work zone. The [NAME] moved a sign, but was advised to talk to management about getting two more [NAME] Ahead signs to have for this set up situation.",
+            "severity_score": 43
+        },
+        "257116": {
+            "date": "7/7/2022",
+            "observation_type": "Other - Equipment - Motion",
+            "comments": "[NAME] member was driving without a seatbelt on the ROW. Spoke to their safety supervisor and he corrected the employee.",
+            "severity_score": 52
+        },
+        "31740": {
+            "date": "8/3/2020",
+            "observation_type": "Hard hat adequate",
+            "comments": "LMA got out of truck without hard had on, there were a crane loading scrap wood and another crew loading poles in the vicinity.",
+            "severity_score": 65
+        },
+        "58914": {
+            "date": "10/7/2020",
+            "observation_type": "Ascending/Descending using 3 point contact",
+            "comments": "Individual climbed into bucket with one hand full. 3 points of contact not used. Specifically covered in SJO.",
+            "severity_score": 26
+        },
+        "83755": {
+            "date": "3/5/2021",
+            "observation_type": "Hard hat adequate",
+            "comments": "Three of the four [NAME] members were not wearing hard hats. The [NAME] Lead was provided some coaching on this, and agreed that they should have had hard hats on, while completing the task they were working on.",
+            "severity_score": 42
+        },
+        "496094": {
+            "date": "9/19/2024",
+            "observation_type": "Rigging protected from sharp edges",
+            "comments": "[NAME] was using sling to secure dolly to pull cable in trenwa. Sling was wrapped around excavator bucket with rough edges. Recommend contractor use approved rigging practices to protect sling from damage.",
+            "severity_score": 35
+        },
+        "435990": {
+            "date": "2/13/2024",
+            "observation_type": "AEP Required (Standard)",
+            "comments": "[NAME] member was observed working without safety glasses. I spoke to and coached the team member about the importance of proper PPE. The matter was corrected. PPE Required [NAME] - T & C 8. 1. 1, 8. 1. 3, 8. 1. 6, 8. 3. 1 ( [NAME] Protection )",
+            "severity_score": 30
+        },
+        "283550": {
+            "date": "9/28/2022",
+            "observation_type": "Other - Defensive driving",
+            "comments": "driver was not comfortable driving a 1500 dodge pickup. i could sense that they were at ease driving this vehicle by the body signs and tension in the arms. i asked before and during the driving session of their comfort level. after completing drive i spoke about bring this issue up to their supervision if they ever had to drive a company vehicle.",
+            "severity_score": 32
+        },
+        "480032": {
+            "date": "7/22/2024",
+            "observation_type": "Job briefing conducted and documented",
+            "comments": "Job briefing communicated verbally but not documented. Discussed with Briar. [NAME] had paper tailboards in truck. Did not use. Coached and will use moving forward when working in pairs.",
+            "severity_score": 47
+        },
+        "446181": {
+            "date": "3/20/2024",
+            "observation_type": "Energy-source controls identified, Special precautions identified",
+            "comments": "[NAME] was using crane to set rebar cage. They didnt have inspect or check rigging on the THA or JB. The suspended load icon wasnt marked on the JB either. Talked with the supervisor on the importance of capturing that information on the JB",
+            "severity_score": 67
+        },
+        "352420": {
+            "date": "5/18/2023",
+            "observation_type": "Safety devices in use (seat belts, back-up alarm, cameras, horn, mirrors, lights, etc.)",
+            "comments": "Operator was running equipment without use of his seatbelt. I stopped him and reminded him to wear seatbelts during operations. [NAME] made correction immediately.",
+            "severity_score": 39
+        },
+        "367850": {
+            "date": "6/29/2023",
+            "observation_type": "Equipment rated for the suspended load, Other - Suspended Load/Overhead Work",
+            "comments": "Observed [NAME] mechanic changing tire on site truck. The truck was being lifted by the crane boom from the service truck attached to the reese hitch of the truck. The hitch is not a certified lifting point for the truck. The work was also being done without having any jack stands or cribbing under the truck while the tire was being changed.",
+            "severity_score": 56
+        },
+        "187287": {
+            "date": "11/3/2021",
+            "observation_type": "All members of team present, Other / Job Briefing, Work procedures reviewed",
+            "comments": "[NAME] of second crew never signed JB. JEL never discussed or documented. Entry location to ROW was never marked, [NAME] cone was leading visitors to the steepest and most hazardous location to enter ROW.",
+            "severity_score": 50
+        },
+        "264287": {
+            "date": "8/2/2022",
+            "observation_type": "Hearing protection adequate, Safety glasses adequate",
+            "comments": "member of crew working without safety glasses. starting saw by multiply members without hearing protection.",
+            "severity_score": 62
+        },
+        "417781": {
+            "date": "11/29/2023",
+            "observation_type": "Line of fire",
+            "comments": "I did coach with LCS on LOF around bottom of pole as one employee had started working at the base of the pole while lineman in bucket was above.",
+            "severity_score": 42
+        },
+        "142851": {
+            "date": "11/14/2019",
+            "observation_type": "Chaps adequate",
+            "comments": "Employee was climbing the pole and planning to use a chainsaw. The question was asked is it ok to use the saw without chaps while climbing working off of the pole. There is not language around this practice, so we chose to wear the chaps.",
+            "severity_score": 58
+        },
+        "373042": {
+            "date": "7/18/2023",
+            "observation_type": "Other - Work Safety Health Plan (WSHP) readily available",
+            "comments": "WSHP provided by [NAME] River Electrical did not have the correct contact information for AEP personnel.",
+            "severity_score": 45
+        },
+        "41512": {
+            "date": "7/1/2020",
+            "observation_type": "Adequate amount of cover up used",
+            "comments": "I noticed that they should be covering up a iron cross that they were working near. i told them about the area that should be covered up and they made the necessary adjustments",
+            "severity_score": 52
+        },
+        "483477": {
+            "date": "7/29/2024",
+            "observation_type": "Expiration date, Labels at both ends",
+            "comments": "I did observe a ground in use that didn't have the proper label attached for testing. I did make them aware of the condition.",
+            "severity_score": 36
+        },
+        "411838": {
+            "date": "11/6/2023",
+            "observation_type": "Worn correctly",
+            "comments": "Climber Amiot had to regularly adjust and tighten his harness while aloft on the ladder, we discussed fixing this properly while not aloft and got a commitment to doing so.",
+            "severity_score": 62
+        },
+        "42073": {
+            "date": "7/2/2020",
+            "observation_type": "Was the job briefing site specific?, Were hazards identified?",
+            "comments": "The job briefing consisted of to many job steps which didnt allow for the crew to capture all of the hazards associated with each process of the work task. Spoke with foreman about adding an additional job briefing when necessary to ensure that they capture all of the associated hazards.",
+            "severity_score": 58
+        },
+        "4907": {
+            "date": "3/26/2019",
+            "observation_type": "Appropriate number of signs out",
+            "comments": "[NAME] crew as out with Dakotah's crews and niether crew had a sign out west of the crew but no sign on the east side of the crew to let people know coming around the corner that the crews were there blocking a lane of the road. This was fixed after I informed [NAME] that another sign was needed.",
+            "severity_score": 62
+        },
+        "249731": {
+            "date": "6/16/2022",
+            "observation_type": "Cones compliant",
+            "comments": "[NAME] was parked in middle of several trucks. [NAME] had his strobe lights on. Didn't have any cones out.",
+            "severity_score": 68
+        },
+        "473651": {
+            "date": "6/19/2024",
+            "observation_type": "Other - PPE",
+            "comments": "Hi - vis was not being worn by crew members as they worked on / along [NAME] [NAME] Rd in [NAME], OH.",
+            "severity_score": 51
+        },
+        "306155": {
+            "date": "12/19/2022",
+            "observation_type": "AEP Required (Standard)",
+            "comments": "Employee removed safety eyewear to look down excavation. I reminded him to glasses back on, especially for concrete pour.",
+            "severity_score": 57
+        },
+        "151023": {
+            "date": "2/27/2019",
+            "observation_type": "Proper barricade",
+            "comments": "[NAME] barricading around equiment not in place while working overhead. Spot corrected, and discussed with crew.",
+            "severity_score": 41
+        },
+        "250392": {
+            "date": "6/16/2022",
+            "observation_type": "When is a rope required to be used when felling a tree?",
+            "comments": "All stop was called to have the employees to reposition the PJ on the other side of the lines to make the finale cut to release the conductor out of the line of fire.",
+            "severity_score": 57
+        },
+        "127409": {
+            "date": "8/2/2021",
+            "observation_type": "Herbicide equipment",
+            "comments": "CREW DID NOT HAVE A SPRAYER ON THE TRUCK. THEY SAID THAT IT WAS LEAKING AND THEY GACE IT TO THE GF TO REPLACE.",
+            "severity_score": 68
+        },
+        "287349": {
+            "date": "10/15/2022",
+            "observation_type": "Overhead lines marked with warning signs (36in. x 36in.) for egress / ingress",
+            "comments": "The crew is receiving stone on a new access road. Trucks are crossing under a distribution line. There are no overhead line warning signs in place.",
+            "severity_score": 45
+        },
+        "180227": {
+            "date": "10/11/2021",
+            "observation_type": "Hard hat adequate, Safety glasses adequate, Side Shields adequate, Work gloves adequate",
+            "comments": "Crewmembers were not wearing the correct PPE while working. Gloves, hard hat and glasses were missing. I addressed the issues with the crew and the violations were correct immediately.",
+            "severity_score": 68
+        },
+        "353959": {
+            "date": "5/23/2023",
+            "observation_type": "Other - THA",
+            "comments": "Confined Space identified on the SIF Icons. There is no confined space associated with the tasks on the THA",
+            "severity_score": 42
+        },
+        "430853": {
+            "date": "1/23/2024",
+            "observation_type": "Cleanliness, Job site hazards, Tripping Hazards, Walking / Working Surfaces",
+            "comments": "Caustic tank area housekeeping above the RO needs improved - mops, cords, and hoses lying in path. This is above the RO. Observed inadequate housekeeping - mop left out on grating and lying against the wall. This was around the caustic area and above the RO on the second floor. Caustic tank - loading area: housekeeping needed improved: empty drums and spilled media evident. Caustic tank area - slips, trips and falls evident - hoses left out across the floor. Recommended that 2 drums need spill containment.",
+            "severity_score": 38
+        },
+        "478832": {
+            "date": "7/17/2024",
+            "observation_type": "Chaps adequate, Hearing protection adequate, Safety glasses adequate",
+            "comments": "RB - foreman witnessed operating chainsaw face level with no chaps, no glasses, no hearing protection creating a potential high energy mechanical SIF",
+            "severity_score": 52
+        },
+        "38281": {
+            "date": "6/11/2020",
+            "observation_type": "Other - Vehicle Operating Condition",
+            "comments": "This truck has been noted many times for various issues including cracked windshield, broken weld on step on rear of truck, grill held in place with rope. The windshield has been repaired. The foreman was working on the truck heater vents when I arrived. The blower motor is turned off but the vents won't close from the engine compartment resulting in a very warm cab while driving.",
+            "severity_score": 66
+        },
+        "444921": {
+            "date": "3/14/2024",
+            "observation_type": "Stick wiped and inspected before use",
+            "comments": "[NAME] failed to wipe stick off before use, coached on the expectation around cleaning sticks on the first use of the day.",
+            "severity_score": 26
+        },
+        "446269": {
+            "date": "3/20/2024",
+            "observation_type": "Cleanliness, Job site hazards",
+            "comments": "[NAME] greenfield construction site that was mid construction. The crew recognized the various hazards and mitigated best they could, but there was definite increased risk all around.",
+            "severity_score": 45
+        },
+        "235440": {
+            "date": "4/28/2022",
+            "observation_type": "Awareness of environment",
+            "comments": "Path crew was taking had small but steep embankment. Recommended crew walk around the area to a more level entrance that was only approximately 15 yards away.",
+            "severity_score": 59
+        },
+        "282306": {
+            "date": "9/27/2022",
+            "observation_type": "Other - Work Safety Health Plan (WSHP) readily available",
+            "comments": "No Porta - [NAME] available for crew use on either sides of highway 181. Discussed with Supervisor and assured they would go back to laydown yard and get trailers for use the following day. Follow - up to ensure in place.",
+            "severity_score": 43
+        },
+        "492972": {
+            "date": "9/9/2024",
+            "observation_type": "[Notes Required for At-Risk Conditions]",
+            "comments": "I had suggested that the crew take the phasing measurements on the outside of the transformer containment to avoid slips, trips or falls and to avoid congestion with underground riser cables.",
+            "severity_score": 53
+        },
+        "46322": {
+            "date": "7/28/2020",
+            "observation_type": "Specific risks / hazards identified, Work procedures reviewed",
+            "comments": "Job briefing failed to discuss multiple hazards associated with work area. [NAME] had to access through a barb wire fence to get to work area and didn't have the safest path marked. [NAME] also failed to mention their procedure while multiple employees using saws at the same time in the ROW. GF made corrections and documented the 20' rule on the job briefing. Also crews were applying herbicide MPG without the proper rubber gloves being worn. It also had to be corrected on the job briefing by the GF.",
+            "severity_score": 73
+        },
+        "186323": {
+            "date": "11/3/2021",
+            "observation_type": "Sign spacing adequate",
+            "comments": "Flagman sign too close to flagger. Traffic was backing up to the last sign. [NAME] spacing addressed with crew",
+            "severity_score": 54
+        },
+        "479928": {
+            "date": "7/16/2024",
+            "observation_type": "Employees wearing gloves appropriate for the hazard (e.g., cut resistant, dielectric, etc.)",
+            "comments": "During my observation I observed 2 employees cutting [NAME] tube without their gloves being worn. I asked them to put them on and explained the reasons why. I also spoke with their foreman [NAME] Fickey about this as well.",
+            "severity_score": 50
+        },
+        "459585": {
+            "date": "5/1/2024",
+            "observation_type": "FR clothing sleeves down",
+            "comments": "One worker pulling new wire with gloves on but did not have FR sleeves down. I reminded him to keep his sleeves down while wearing those gloves. [NAME] agreed.",
+            "severity_score": 31
+        },
+        "205326": {
+            "date": "1/20/2022",
+            "observation_type": "Pre job Inspection/JSA",
+            "comments": "Observed a scaffolding that was fully erected and usable that did not have scaffold inspection tag on it to show that it had been inspected for use by a competent person.",
+            "severity_score": 55
+        },
+        "350022": {
+            "date": "5/11/2023",
+            "observation_type": "Guard structures erected where needed (roads, railroads, rivers)",
+            "comments": "Guard structure placement only adequate on tension end of wire pull. Additional guard structure provides no protection, and discussed with NHPL Safety, Supt, and TCR. Additional equipment being brought over to provide guarding of single phase perpendicular distribution. Spot corrected.",
+            "severity_score": 58
+        },
+        "325230": {
+            "date": "2/9/2023",
+            "observation_type": "FR clothing sleeves down",
+            "comments": "FR sleeves were rolled up when attempting to close in transformer fuse. Employee rolled down sleeves. Arc flash",
+            "severity_score": 60
+        },
+        "482610": {
+            "date": "7/19/2024",
+            "observation_type": "Did crew determine task assignments?, Was the job briefing site specific?, Were hazards identified?",
+            "comments": "The crew just added the new location to the briefing. It was not site specific. They went from normal tree removal to a storm tree job. They did not have any new information regarding the dangers in front of them.",
+            "severity_score": 49
+        },
+        "305348": {
+            "date": "11/10/2022",
+            "observation_type": "Other - Personal Safety",
+            "comments": "This was as 2 man crew and the ground man is relatively new and not a certified climber. The foreman was confident that the ground man could perform an aerial rescue if needed?",
+            "severity_score": 47
+        },
+        "311184": {
+            "date": "1/10/2023",
+            "observation_type": "Other - Personal Safety",
+            "comments": "[NAME] was being transferred from a service pole to the transformer pole leaving really long tails that had the potential to flip up into the primary. I had a conversation with the employee, he corrected and understood the concern. [NAME] was sure to maintain positive control.",
+            "severity_score": 52
+        },
+        "248625": {
+            "date": "6/14/2022",
+            "observation_type": "Rebar caps in place as needed.",
+            "comments": "Batter bards et up close to work area without rebar caps on pins. The foreman was made aware and he had them installed",
+            "severity_score": 54
+        },
+        "92990": {
+            "date": "4/6/2021",
+            "observation_type": "Vests worn when required",
+            "comments": "One crew member wearing bright orange t - shirt. [NAME] thought it was okay as a substitute for traffic vest.",
+            "severity_score": 35
+        },
+        "9104": {
+            "date": "8/7/2019",
+            "observation_type": "Worn correctly",
+            "comments": "Bucket harness was not adjusted properly, [NAME] was ask to boom down so his harness could be adjusted.",
+            "severity_score": 61
+        },
+        "105838": {
+            "date": "5/13/2021",
+            "observation_type": "Used appropriately",
+            "comments": "One operator did not have leg restraints properly placed and tight. Coached employee on the way it is required and the dangers of not being proper he made corrections immediately.",
+            "severity_score": 39
+        },
+        "474446": {
+            "date": "6/24/2024",
+            "observation_type": "Other - Equipment",
+            "comments": "Jib that is NOT to be used due to damage. Should be tagged Out of [NAME]. Discussed with TCR and contractor expected to have removed from site. Question Training to past users, as a take - a - way for internal review by [NAME] Standards company.",
+            "severity_score": 54
+        },
+        "334296": {
+            "date": "3/28/2023",
+            "observation_type": "Other - Equipment",
+            "comments": "Boom truck lacking [NAME] Pin to ensure load line stays in sheave. Contacted NHPL safety rep to ensure pin installed prior to any continued use of equipment.",
+            "severity_score": 45
+        },
+        "127889": {
+            "date": "8/6/2021",
+            "observation_type": "Respect barricade",
+            "comments": "The LCS was provided some coaching about the [NAME] members respecting the barricade ropes and not touching the trucks. One LMC had grabbed his work gloves off the truck and he also had placed his Gloves and sleeves on the back of the truck while the ropes were up. The Apprentice was coached about making sure to look at the bucket and make sure it is not in the primary / minimum approach prior to dropping the rope to access the trucks equipment.",
+            "severity_score": 68
+        },
+        "28134": {
+            "date": "3/10/2020",
+            "observation_type": "Load securement",
+            "comments": "Truck cabinets on outside of vehicle were not latched and locked to prevent opening during travel / discussed.",
+            "severity_score": 46
+        },
+        "131452": {
+            "date": "8/17/2021",
+            "observation_type": "Did crew determine task assignments?",
+            "comments": "Job briefing listed tasks needed to complete the assigned task, but the job briefing does not assign individual tasks to the crew members.",
+            "severity_score": 42
+        },
+        "108065": {
+            "date": "5/11/2021",
+            "observation_type": "Inspection up to date",
+            "comments": "Fire extinguisher annual inspection out of date. Extinguisher to be removed from vehicle and replaced.",
+            "severity_score": 55
+        },
+        "432167": {
+            "date": "1/30/2024",
+            "observation_type": "Appropriate signs out",
+            "comments": "[NAME] was using road work signs instead of utility work signs. I spoke with lead flagger about using the proper sign.",
+            "severity_score": 39
+        },
+        "479714": {
+            "date": "7/17/2024",
+            "observation_type": "Other - Work Safety Health Plan (WSHP) readily available",
+            "comments": "Continue to work on digital document usage. Follow up [NAME] 1st with 4 weeks to establish document ( s ) on - site for review. Safety representative working to resolve.",
+            "severity_score": 30
+        },
+        "480714": {
+            "date": "7/23/2024",
+            "observation_type": "Hazard recognition",
+            "comments": "The City asked the County workers across the street to make repairs and they placed a cap on the pipe while we were on site.",
+            "severity_score": 58
+        },
+        "465360": {
+            "date": "5/16/2024",
+            "observation_type": "Condition, Operated within load rating",
+            "comments": "The LCS in charge of rigging the [NAME] 55 pole was not aware of the pole weight, and the operator of the Patriot 40 track digger derrick was not familiar with the Patriot 40s Safe [NAME] Load Chart. The [NAME] 55 pole can exceed the capacity of the equipment at the applied boom angle and load area distance. The Pole weight was est. 3062 lbs. The digger was having a hard time lifting the pole at the angle the boom was placed at first.",
+            "severity_score": 61
+        },
+        "62958": {
+            "date": "11/2/2020",
+            "observation_type": "Within of date, Worn when required",
+            "comments": "All crew members were at the transformer location with no Rubber Gloves available or being used when I arrived.",
+            "severity_score": 63
+        },
+        "325215": {
+            "date": "2/27/2023",
+            "observation_type": "Safety glasses adequate",
+            "comments": "The fleet tech routinely would remove the safety glasses from his face and placed them on his head. During the tasks he needed reminding that he had removed his safety glasses. This was discussed in greater detail at the conclusion of the observation. [NAME] was reminded to be a little more patient regarding the use of his glasses and that he could request glasses with diopters to support reading and closer examination of smaller part, when necessary.",
+            "severity_score": 34
+        },
+        "320145": {
+            "date": "2/9/2023",
+            "observation_type": "Number of working saws",
+            "comments": "* Only two working chainsaws were available between two manual trucks. [NAME] stated they would trade off throughout the day and request that necessary repairs would be made to ensure additional chainsaws were available if needed not only for production but for emergency reasons.",
+            "severity_score": 62
+        },
+        "49274": {
+            "date": "8/19/2020",
+            "observation_type": "Grounds installed in proper order",
+            "comments": "LMA went up and untied burnt off arm and placed phase on top of pole before Installing grounds. [NAME] had them with him, rushing and did that before grounding.",
+            "severity_score": 63
+        },
+        "471042": {
+            "date": "6/17/2024",
+            "observation_type": "Appropriate signs out",
+            "comments": "[NAME] ahead sign was set out behind truck near work site, however, that was in right of way in forest. Sign should have been placed near entrance to dirt road that led down to the crew in case emergency responders were called to work site.",
+            "severity_score": 59
+        },
+        "283688": {
+            "date": "9/21/2022",
+            "observation_type": "Other - Work Area Protection",
+            "comments": "[NAME] area was set up great. But flaggers were not engaged in watching for hazards. They took for granted that because it was in a parking lot they could relax",
+            "severity_score": 51
+        },
+        "344271": {
+            "date": "4/26/2023",
+            "observation_type": "Chocks in use as necessary",
+            "comments": "Digger and Bucket truck that are parked on - site did not have proper wheel chokes in place or being used properly",
+            "severity_score": 52
+        },
+        "454429": {
+            "date": "4/17/2024",
+            "observation_type": "Tripping Hazards, Walking / Working Surfaces",
+            "comments": "U3 [NAME] End: Area through passageway on floor 1 has protruding bolts sticking up 1 to 2 above concrete surface. This area is south of Global s breakroom. And, the bolt studs are found on each side of the doorway and could be slip, trip, fall potentials. Notified and advised plant with power point of shared findings, communicated, and placed on corrective issue tracking sheet.",
+            "severity_score": 37
+        },
+        "374700": {
+            "date": "7/20/2023",
+            "observation_type": "Other - Walking and Working areas",
+            "comments": "[NAME] was using jack hammer periodically and have hearing protection sign or extra hearing protection for visitors",
+            "severity_score": 37
+        },
+        "360258": {
+            "date": "6/5/2023",
+            "observation_type": "Other - Pre-Job Briefing",
+            "comments": "The crew has not performed a Pre Job Briefing. They shared an Emergency Action Plan Document with me. They were not aware of the Pre Job Briefing Requirement. I shared the location of the Pre Job Briefing in VERO with the crew. The foreman took notes and will relay the information to the management team. The crew has excellent attitudes and were open to coaching.",
+            "severity_score": 39
+        },
+        "36074": {
+            "date": "5/29/2020",
+            "observation_type": "Rebrief when changing glove class, Two pair of gloves in the bucket",
+            "comments": "Employees change gloves while a loft with no re - brief. Employees took class 0 And class two gloves and sleeves a loft at the same time.",
+            "severity_score": 65
+        },
+        "141588": {
+            "date": "11/8/2019",
+            "observation_type": "Adequate amount of cover up used, Other - Cover up",
+            "comments": "[NAME] was using hard cover on the pole. The hard cover did not cover the pole adequately. [NAME] addressed the issue when asked. the crew decided to use rubber blankets to cover the portion of the pole the hard coer would not cover. crew took the suggestion very well.",
+            "severity_score": 31
+        },
+        "87563": {
+            "date": "2/18/2021",
+            "observation_type": "Ice cleats, Personal voltage detector",
+            "comments": "A few of the employees didnt have ice cleats. The LCS gave his pair to one of the linemen and I rounded up another pair for them the next day. None of the team members had their PVD on",
+            "severity_score": 61
+        },
+        "37929": {
+            "date": "6/8/2020",
+            "observation_type": "Communicate understanding of tasks",
+            "comments": "Job description indicated bucket work, flagging, and chipping brush, however, the [NAME] Procedures only had initials and no assignment.",
+            "severity_score": 32
+        },
+        "470589": {
+            "date": "4/9/2024",
+            "observation_type": "Communicate understanding of tasks, High energy hazards discussed and mitigated",
+            "comments": "[NAME] Energy Hazards and Icons not documented or utilized on job brief. Discussed with crew the importance of identifying the [NAME] Energy Hazards and how the icons can assist them with identifying and mitigating those hazards. AEP S & H [NAME] 1. 06",
+            "severity_score": 43
+        },
+        "229894": {
+            "date": "4/14/2022",
+            "observation_type": "Inspection up to date",
+            "comments": "No annual inspection on extinguisher. Informed driver and he will get a new one at service center soon.",
+            "severity_score": 36
+        },
+        "391004": {
+            "date": "9/6/2023",
+            "observation_type": "Other - Excavations - Telecom - Pressure",
+            "comments": "Coached crew on the importance of covering an open hole with plywood and writing hole on it. They had plywood and snow fence in place.",
+            "severity_score": 39
+        },
+        "422252": {
+            "date": "12/15/2023",
+            "observation_type": "Other - THA, THA lists step- by-step plan",
+            "comments": "Disregarded PJB and THA plan by not donning their PPE. We plan our work and work our plan to avoid any unsafe act. Theres a reason as to why we conduct these THAs and PJBs. We must also lead by example as supervisors, supervisor providing coverage tends to wear his designer glasses instead of the proper z87 safety glasses as required.",
+            "severity_score": 55
+        },
+        "405867": {
+            "date": "10/20/2023",
+            "observation_type": "Equipment grounded",
+            "comments": "[NAME] in use was not grounded. Aerial devices shall be grounded when in use. Grounding shall be applied to a system ground conductor such as station equipment ground, structure ground, or a grounded structure. Article 10. 4. 3. 1, AEP Transmission 2020 Contractor Safety Handbook",
+            "severity_score": 54
+        },
+        "78397": {
+            "date": "2/12/2021",
+            "observation_type": "All members of team present, Communicate understanding of tasks",
+            "comments": "Job briefing conducted in a hurry due to extreme cold and outage situation. Talked with foreman about the need to have a quality briefing no matter the conditions.",
+            "severity_score": 69
+        },
+        "438291": {
+            "date": "2/21/2024",
+            "observation_type": "Cones compliant",
+            "comments": "Cones were good by vehicle but was not using any drop zone cones when there was a climber trimming a tree.",
+            "severity_score": 28
+        },
+        "424049": {
+            "date": "12/19/2023",
+            "observation_type": "Hazards and Mitigation Controls Identified",
+            "comments": "Encouraged foreman to further discuss and document hazards associated with rotating equipment ( task was installing 18 guy anchors at Str. 2 )",
+            "severity_score": 63
+        },
+        "398853": {
+            "date": "9/27/2023",
+            "observation_type": "THA lists step- by-step plan",
+            "comments": "The crew used the crane to remove rings from foundations and are cleaning up bolts on the foundation. This task was not listed on the THA.",
+            "severity_score": 49
+        },
+        "472286": {
+            "date": "6/20/2024",
+            "observation_type": "Recognized At-Risk behaviors (In the comment explained how you discussed with the individual and coached them on why it is important)",
+            "comments": "One of the employees did not have his forks tilted back far enough and had the transformer on the end of the forks, while also turning before he lowered the load. Stopped the job and asked if a JSA had been performed before starting the job. Employees stated they had done a verbal JSA, but had failed to talk about the wet pallets and the need to tilt forks back and to lower forks before turning.",
+            "severity_score": 62
+        },
+        "111640": {
+            "date": "6/9/2021",
+            "observation_type": "Adequate Condition",
+            "comments": "chipper tire showing cord on driver side. GF present during audit and was informed. he said he would work on getting tire fixed.",
+            "severity_score": 43
+        }
+    }
+}

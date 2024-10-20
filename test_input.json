@@ -4,7 +4,7 @@
       "date": "2024-10-15",
       "observation_type": "Fire Safety",
       "comments": "Potential fire hazard near storage area.",
-      "severity_score": 8
+      "severity_score": 98
     },
     "primary_key_2": {
       "date": "2024-10-16",
@@ -295,6 +295,42 @@
       "severity_score": 6
     },
     "primary_key_50": {
+      "date": "2024-12-03",
+      "observation_type": "Traffic Safety",
+      "comments": "Speeding reported near pedestrian zone.",
+      "severity_score": 7
+    },
+    "primary_key_451": {
+      "date": "2024-11-28",
+      "observation_type": "Slip and Fall",
+      "comments": "Ice accumulation at entrance.",
+      "severity_score": 8
+    },
+    "primary_key_461": {
+      "date": "2024-11-29",
+      "observation_type": "Machine Safety",
+      "comments": "Unguarded moving parts.",
+      "severity_score": 10
+    },
+    "primary_key_471": {
+      "date": "2024-11-30",
+      "observation_type": "Noise Safety",
+      "comments": "No ear protection provided.",
+      "severity_score": 5
+    },
+    "primary_key_481": {
+      "date": "2024-12-01",
+      "observation_type": "Workplace Violence",
+      "comments": "Bullying behavior observed.",
+      "severity_score": 7
+    },
+    "primary_key_491": {
+      "date": "2024-12-02",
+      "observation_type": "Emergency Preparedness",
+      "comments": "First aid kit not accessible.",
+      "severity_score": 6
+    },
+    "primary_key_501": {
       "date": "2024-12-03",
       "observation_type": "Traffic Safety",
       "comments": "Speeding reported near pedestrian zone.",
