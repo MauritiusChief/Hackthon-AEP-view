@@ -34,8 +34,11 @@ function populateGrid(records) {
     const gridContainer = document.getElementById('gridContainer');
     gridContainer.innerHTML = '';  // Clear existing content
 
-    // Convert the records object to an array
-    const recordArray = Object.values(records);
+    // Convert records object to an array of objects with keys
+    const recordArray = Object.entries(records).map(([key, record]) => ({
+        primaryKey: key,
+        ...record
+    }));
 
     // Sort the array by severity_score (descending) and date (ascending)
     recordArray.sort((a, b) => {
@@ -53,7 +56,7 @@ function populateGrid(records) {
     for (let i = 0; i < Math.min(10, recordArray.length); i++) {
         const record = recordArray[i];
         const severityScore = record.severity_score;
-        const primaryKey = Object.keys(records)[i]; // Get the primary key
+        const primaryKey = record.primaryKey; // Get the primary key
         const card = document.createElement('div');
         card.className = 'emrg-card';
     
