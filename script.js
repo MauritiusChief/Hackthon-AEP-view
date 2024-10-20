@@ -10,19 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
       })
       .then(data => {
           console.log('Data loaded successfully');
-          const recordArray = Object.values(data.records);
-            
-            // Sort the array by severity_score (descending) and date (ascending)
-            recordArray.sort((a, b) => {
-                if (b.severity_score !== a.severity_score) {
-                    return b.severity_score - a.severity_score;
-                } else {
-                    return new Date(a.date) - new Date(b.date);
-                }
-            });
 
-            // Initial display of top 10 results
-            displayResults(recordArray, 0);
+          displayResults([], 0)
 
           populateGrid(data.records);
 
@@ -32,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
           // Attach click event to the search button
           const searchButton = document.getElementById('searchButton');
           searchButton.addEventListener('click', () => {
-              setupSearch(recordArray); // Call setupSearch on each button click
+              setupSearch(data.records); // Call setupSearch on each button click
           });
       })
       .catch(error => {
@@ -123,11 +112,13 @@ function setupSearch(records) {
 
     const searchTerm = searchInput.value.toLowerCase();
     console.log('Search initiated with term:', searchTerm); // Debugging line
-    // Filter the records based on the search term
-    const filteredRecords = records.filter(record => {
-        const recordText = `${record.date} ${record.observation_type} ${record.comments}`.toLowerCase();
+
+    // Filter the records based on the search term, including primary key
+    const filteredRecords = Object.keys(records).filter(key => {
+        const record = records[key];
+        const recordText = `${key} ${record.date} ${record.observation_type} ${record.comments}`.toLowerCase();
         return recordText.includes(searchTerm);
-    });
+    }).map(key => ({ primaryKey: key, ...records[key] }));
 
     // Display the filtered results (starting from the first page)
     displayResults(filteredRecords, 0);
@@ -145,7 +136,7 @@ function displayResults(records, pageIndex) {
     const currentPageRecords = records.slice(startIndex, endIndex);
     const rowsToDisplay = [...currentPageRecords];
     while (rowsToDisplay.length < resultsPerPage) {
-        rowsToDisplay.push({ date: '-', observation_type: '-', comments: '-', severity_score: '-' });
+        rowsToDisplay.push({ primaryKey: '-', date: '-', observation_type: '-', comments: '-', severity_score: '-' });
     }
 
     // Render the records
@@ -153,6 +144,7 @@ function displayResults(records, pageIndex) {
         const resultRow = document.createElement('div');
         resultRow.className = 'result-row';
         resultRow.innerHTML = `
+            <div>${record.primaryKey}</div>
             <div>${record.date}</div>
             <div>${record.observation_type}</div>
             <div>${record.comments}</div>

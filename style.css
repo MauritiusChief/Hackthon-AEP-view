@@ -79,7 +79,7 @@ h1 {
 
 .result-row {
     display: grid;
-    grid-template-columns: 1fr 1.5fr 3fr 0.5fr; /* Adjusted for variable column widths */
+    grid-template-columns: 0.7fr 1fr 1.5fr 3fr 0.5fr; /* Adjusted for variable column widths */
     padding: 8px;
     border-bottom: 1px solid #ccc;
 }
@@ -93,11 +93,11 @@ h1 {
     background-color: #f9f9f9; /* Alternating row color for better readability */
 }
 
-.result-row div:nth-child(3) {
+.result-row div:nth-child(4) {
     text-align: left; /* Align comments to the left for better readability */
 }
 
-.result-row div:nth-child(4) {
+.result-row div:nth-child(5) {
     text-align: right; /* Align severity score to the right */
 }
 
