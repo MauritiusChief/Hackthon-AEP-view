@@ -132,43 +132,44 @@ function setupSearch(records) {
 
 // Function to create the pie chart
 function createPieChart(records) {
-  const severityCounts = [0, 0, 0]; // 1-50, 51-80, 81-100
+    const severityCounts = [0, 0, 0]; // 1-50, 51-80, 81-100
 
-  // Count records in each severity range
-  for (const key in records) {
-      const score = records[key].severity_score;
+    // Count records in each severity range
+    for (const key in records) {
+        const score = records[key].severity_score;
 
-      if (score >= 1 && score <= 50) {
-          severityCounts[0]++;
-      } else if (score >= 51 && score <= 80) {
-          severityCounts[1]++;
-      } else if (score >= 81 && score <= 100) {
-          severityCounts[2]++;
-      }
-  }
-  console.log("severityCounts:", severityCounts)
+        if (score >= 1 && score <= 50) {
+            severityCounts[0]++;
+        } else if (score >= 51 && score <= 80) {
+            severityCounts[1]++;
+        } else if (score >= 81 && score <= 100) {
+            severityCounts[2]++;
+        }
+    }
+    console.log("severityCounts:", severityCounts)
 
-  const ctx = document.getElementById('severityChart').getContext('2d');
-  new Chart(ctx, {
-      type: 'pie',
-      data: {
-          labels: ['1-50', '51-80', '81-100'],
-          datasets: [{
-              data: severityCounts,
-              backgroundColor: ['#4CAF50', '#FFC107', '#F44336'], // Green, Yellow, Red
-          }]
-      },
-      options: {
-          responsive: true,
-          plugins: {
-              legend: {
-                  position: 'top',
-              },
-              title: {
-                  display: true,
-                  text: 'Severity Score Distribution'
-              }
-          }
-      }
-  });
+    const ctx = document.getElementById('severityChart').getContext('2d');
+    new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ['1-50', '51-80', '81-100'],
+            datasets: [{
+                data: severityCounts,
+                backgroundColor: ['#4CAF50', '#FFC107', '#F44336'],
+            }]
+        },
+        options: {
+            responsive: true,
+            // maintainAspectRatio: false, // 允许改变纵横比
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+                title: {
+                    display: true,
+                    text: 'Severity Score Distribution'
+                }
+            }
+        }
+    });
 }
