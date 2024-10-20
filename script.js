@@ -43,8 +43,11 @@ function populateGrid(records) {
         }
     });
 
+    // Define grid positions
+    const gridAreas = ['most-emrg', 'second-emrg', 'third-emrg', 'forth-emrg', 'fifth-emrg', 'sixth-emrg', 'seventh-emrg', 'eighth-emrg', 'ninth-emrg', 'tenth-emrg'];
+
     // Create grid items
-    for (let i = 0; i < Math.min(4, recordArray.length); i++) {
+    for (let i = 0; i < Math.min(10, recordArray.length); i++) {
         const record = recordArray[i];
         const severityScore = record.severity_score;
         const primaryKey = Object.keys(records)[i]; // Get the primary key
@@ -52,49 +55,50 @@ function populateGrid(records) {
         card.className = 'emrg-card';
     
         // Assign grid-area to each card
-        if (i === 0) {
-            card.style.gridArea = 'most-emrg';
-        } else if (i === 1) {
-            card.style.gridArea = 'second-emrg';
-        } else if (i === 2) {
-            card.style.gridArea = 'third-emrg';
-        } else if (i === 3) {
-            card.style.gridArea = 'forth-emrg';
-        }
-    
-        // Assign color based on severity score
-        let bgColor = '';
-        if (severityScore >= 1 && severityScore <= 50) {
-            bgColor = '#4CAF50'; // Green
-        } else if (severityScore >= 51 && severityScore <= 80) {
-            bgColor = '#FFC107'; // Yellow
-        } else if (severityScore >= 81 && severityScore <= 100) {
-            bgColor = '#F44336'; // Red
-        }
-        card.style.backgroundColor = bgColor;
+        card.style.gridArea = gridAreas[i];
     
         // Add content to the card
-        if (i === 0) {  // 'most-emrg' card shows all info
+        if (i < 2) {
             card.innerHTML = `
-                <h3>Most Urgent</h3>
+                <h3>${i !== 1 ? 'Most' : 'Second'} Urgent</h3>
                 <p>Primary Key: ${primaryKey}</p>
                 <p>Date: ${record.date}</p>
                 <p>Type: ${record.observation_type}</p>
                 <p>Comments: ${record.comments}</p>
-                <p>Severity: ${severityScore}</p>
+                <p class="severity ${getSeverityClass(record.severity_score)}">Severity: ${severityScore}</p>
             `;
-        } else {  // 'second-emrg', 'third-emrg', 'forth-emrg' show limited info
+        } else if (i < 6) {
             card.innerHTML = `
-                <h3>${i === 1 ? 'Second' : i === 2 ? 'Third' : 'Forth'} Urgent</h3>
+                <h3> Less Urgent</h3>
                 <p>Primary Key: ${primaryKey}</p>
                 <p>Type: ${record.observation_type}</p>
-                <p>Severity: ${severityScore}</p>
+                <p class="severity ${getSeverityClass(record.severity_score)}">Severity: ${severityScore}</p>
+                <div class="tooltip">
+                    <p>Date: ${record.date}</p>
+                    <p>Comments: ${record.comments}</p>
+                </div>
+            `;
+        } else {
+            card.innerHTML = `
+                <p>Primary Key: ${primaryKey}</p>
+                <p class="severity ${getSeverityClass(record.severity_score)}">Severity: ${severityScore}</p>
+                <div class="tooltip">
+                    <p>Type: ${record.observation_type}</p>
+                    <p>Date: ${record.date}</p>
+                    <p>Comments: ${record.comments}</p>
+                </div>
             `;
         }
     
         // Add the card to the grid container
         gridContainer.appendChild(card);
     }
+}
+
+function getSeverityClass(score) {
+    if (score <= 60) return 'low';
+    if (score <= 80) return 'medium';
+    return 'high';
 }
 
 // Function to setup search functionality
@@ -132,15 +136,15 @@ function setupSearch(records) {
 
 // Function to create the pie chart
 function createPieChart(records) {
-    const severityCounts = [0, 0, 0]; // 1-50, 51-80, 81-100
+    const severityCounts = [0, 0, 0];
 
     // Count records in each severity range
     for (const key in records) {
         const score = records[key].severity_score;
 
-        if (score >= 1 && score <= 50) {
+        if (score >= 1 && score <= 60) {
             severityCounts[0]++;
-        } else if (score >= 51 && score <= 80) {
+        } else if (score >= 61 && score <= 80) {
             severityCounts[1]++;
         } else if (score >= 81 && score <= 100) {
             severityCounts[2]++;
@@ -152,7 +156,7 @@ function createPieChart(records) {
     new Chart(ctx, {
         type: 'pie',
         data: {
-            labels: ['1-50', '51-80', '81-100'],
+            labels: ['1-60', '61-80', '81-100'],
             datasets: [{
                 data: severityCounts,
                 backgroundColor: ['#4CAF50', '#FFC107', '#F44336'],
