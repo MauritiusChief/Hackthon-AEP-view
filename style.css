@@ -39,9 +39,9 @@ h1 {
     font-weight: bold;
 }
 
-.emrg-card .severity.low { color: #4CAF50; } /* Green for 1-60 */
-.emrg-card .severity.medium { color: #FFC107; } /* Yellow for 61-80 */
-.emrg-card .severity.high { color: #F44336; } /* Red for 81-100 */
+.severity.low { color: #4CAF50; } /* Green for 1-60 */
+.severity.medium { color: #FFC107; } /* Yellow for 61-80 */
+.severity.high { color: #F44336; } /* Red for 81-100 */
 
 .emrg-card .tooltip {
     display: none;

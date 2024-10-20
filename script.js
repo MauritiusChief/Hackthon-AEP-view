@@ -156,7 +156,7 @@ function displayResults(records, pageIndex) {
             <div>${record.date}</div>
             <div>${record.observation_type}</div>
             <div>${record.comments}</div>
-            <div>${record.severity_score}</div>
+            <div class="severity ${getSeverityClass(record.severity_score)}">${record.severity_score}</div>
         `;
         filteredResults.appendChild(resultRow);
     });
