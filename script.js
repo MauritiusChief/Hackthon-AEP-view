@@ -112,6 +112,13 @@ function populateGrid(records) {
     }
 }
 
+function getSeverityClass(score) {
+    if (score <= 60) return 'low';
+    if (score <= 80) return 'medium';
+    return 'high';
+}
+
+
 // Function to setup search functionality
 function setupSearch(records) {
     const searchInput = document.getElementById('searchInput');
